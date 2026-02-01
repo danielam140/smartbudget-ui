@@ -1,4 +1,8 @@
 # SmartBudget – Interfaz Web
+## Enlaces del proyecto
+- Repositorio GitHub: https://github.com/danielam140/smartbudget-ui
+- Sitio desplegado (Netlify): https://illustrious-cannoli-4db133.netlify.app/
+
 
 ## Descripción del proyecto
 
