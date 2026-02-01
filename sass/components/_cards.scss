@@ -1,0 +1,38 @@
+// _cards.scss
+@use "../abstracts/index" as *;
+
+.feature-card,
+.pricing-card,
+.hero__mock,
+.how__step {
+  @include soft-card;
+}
+
+.pricing-card__price {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0.25rem 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.pricing-card__list {
+  padding-left: 1.1rem;
+  margin-bottom: 1rem;
+  color: $color-muted;
+}
+
+.pricing-card--highlight {
+  border: 1px solid rgba(79, 70, 229, 0.28);
+}
+
+.how__number {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(79, 70, 229, 0.12);
+  color: $color-primary;
+  font-weight: 800;
+}

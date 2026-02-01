@@ -1,0 +1,19 @@
+/* ================================
+   SmartBudget - Main SCSS
+   Arquitectura 7-1 (SASS moderno)
+================================ */
+
+/* ABSTRACTS */
+@use "abstracts/index" as *;
+
+/* BASE */
+@use "base/index" as *;
+
+/* LAYOUT */
+@use "layout/index" as *;
+
+/* COMPONENTS */
+@use "components/index" as *;
+
+/* PAGES */
+@use "pages/index" as *;

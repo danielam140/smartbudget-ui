@@ -1,0 +1,19 @@
+// _reset.scss
+@use "../abstracts/index" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  color: $color-secondary;
+  background: $color-bg;
+}

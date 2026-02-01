@@ -1,0 +1,6 @@
+// _footer.scss
+@use "../abstracts/index" as *;
+
+.site-footer a:hover {
+  text-decoration: none;
+}

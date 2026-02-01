@@ -1,0 +1,4 @@
+.DS_Store
+.Trash/
+*.map
+node_modules/

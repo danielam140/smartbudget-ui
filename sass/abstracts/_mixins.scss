@@ -1,0 +1,13 @@
+// _mixins.scss
+@use "variables" as *;
+
+@mixin mq($min) {
+  @media (min-width: $min) { @content; }
+}
+
+@mixin soft-card {
+  border-radius: $radius-lg;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.06);
+}
+

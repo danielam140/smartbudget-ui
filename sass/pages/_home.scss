@@ -1,0 +1,155 @@
+// =======================
+// _home.scss
+// Página: Home / Landing
+// =======================
+
+/* =======================
+   HERO
+======================= */
+@use "../abstracts/index" as *;
+
+.hero {
+  position: relative;
+
+  background-image: url("../assets/img/foto-portada-sitio-web.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1.hero__title {
+    color: white;
+}
+/* Overlay para legibilidad */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00000084;
+    pointer-events: none;
+}
+
+/* Contenido sobre el overlay */
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* =======================
+   Badge
+======================= */
+.hero__badge {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(79, 70, 229, 0.12);
+  color: $color-primary;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+/* =======================
+   Textos Hero
+======================= */
+.hero__title {
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.hero__subtitle {
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Lista de bullets */
+.hero__bullets {
+  padding-left: 1.1rem;
+  color: $color-muted;
+}
+
+.hero__bullet {
+  margin-bottom: 0.25rem;
+}
+
+/* =======================
+   Carrusel
+======================= */
+.hero__carousel-title {
+  color: $color-primary;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.hero__carousel {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Imagen del carrusel */
+.hero__carousel-img {
+  height: 240px; // mobile first
+  object-fit: cover;
+}
+
+/* Necesario para posicionar el caption */
+.hero__carousel .carousel-item {
+  position: relative;
+}
+
+/* Texto sobre la imagen */
+.hero__carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  padding: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.6)
+  );
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.hero__carousel-caption h3,
+.hero__carousel-caption p {
+  color: #fff;
+}
+
+/* =======================
+   Features (cards con imagen)
+======================= */
+.feature-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* =======================
+   Media Queries
+   Mobile First
+======================= */
+@include mq($bp-tablet) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__carousel-img {
+    height: 320px;
+  }
+}
+
+@include mq($bp-desktop) {
+  .hero__title {
+    font-size: 2.9rem;
+  }
+
+  .hero__carousel-img {
+    height: 360px;
+  }
+}

@@ -1,0 +1,12 @@
+// _buttons.scss
+// Ejemplo de botón propio (BEM) si quieres extender sin pelear con Bootstrap.
+@use "../abstracts/index" as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+
+  &--primary { background: $color-primary; color: white; }
+}
